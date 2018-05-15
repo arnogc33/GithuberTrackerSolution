@@ -23,19 +23,17 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost:8080/GithuberTracker/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8080/GithuberTracker/githubers">Githubers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/" target="_blank">To github.com</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="http://localhost:8080/GithuberTracker/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="http://localhost:8080/GithuberTracker/githubers">Githubers</a>
+                <a class="nav-item nav-link" href="http://localhost:8080/GithuberTracker/track">Track him/her</a>
+                <a class="nav-item nav-link" href="https://github.com/" target="_blank">To github.com</a>
+            </div>
         </div>
     </nav>
 </header>

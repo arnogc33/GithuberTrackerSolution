@@ -1,6 +1,7 @@
 package model;
 
-import java.net.URL;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Githuber {
 
@@ -10,8 +11,12 @@ public class Githuber {
     private long id;
     private String avatarUrl;
 
-
-    public Githuber(long id, String name, String email, String login, String avatarUrl) {
+    @JsonCreator
+    public Githuber(@JsonProperty("id") long id,
+                    @JsonProperty("name") String name,
+                    @JsonProperty("email") String email,
+                    @JsonProperty("login") String login,
+                    @JsonProperty("avatar_url") String avatarUrl) {
         this.name = name;
         this.email = email;
         this.login = login;
